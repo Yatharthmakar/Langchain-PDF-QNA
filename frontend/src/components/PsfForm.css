@@ -1,0 +1,134 @@
+/* Base styles */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background: white;
+  }
+  
+  /* Header styles */
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo img {
+    height: 32px;
+  }
+  
+  .upload-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .upload-btn:hover {
+    background: #f9f9f9;
+  }
+  
+  /* Main content styles */
+  .chat-main {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .upload-area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #e2e2e2;
+    border-radius: 8px;
+    margin: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .upload-area:hover {
+    border-color: #999;
+  }
+  
+  .upload-label {
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Chat messages */
+  .chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .message {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .question {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .answer {
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Footer styles */
+  .chat-footer {
+    border-top: 1px solid #eee;
+    padding: 1rem;
+  }
+  
+  .message-form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .message-form input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .message-form input:focus {
+    outline: none;
+    border-color: #999;
+  }
+  
+  .message-form button {
+    padding: 0.75rem;
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .message-form button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .message-form button:hover:not(:disabled) {
+    color: #333;
+  }
